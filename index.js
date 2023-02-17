@@ -14,7 +14,7 @@ const multer = require('multer');
 const uploadMiddleware = multer({dest:'uploads/'});
 const fs = require('fs');
 
-app.use(cors({credentials:true, origin:'http://localhost:3000'}));
+app.use(cors({credentials:true, origin:'https://bloggo-nz7v.onrender.com'}));
 app.use(express.json())
 app.use(cookieParser())
 const salt = bcrypt.genSaltSync(10)
